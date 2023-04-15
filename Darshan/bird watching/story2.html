@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MadLib : Bird Watching</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="/Darshan/favicon.png"
+    />
+
+    <!-- external css link -->
+
+    <link rel="stylesheet" href="/Darshan/bird watching/storystyle.css" />
+
+    <!-- external js link -->
+
+    <script
+      type="module"
+      defer
+      src="/Darshan/bird watching/story2script.js"
+    ></script>
+    <script type="module" defer src="/Darshan/bird watching/Arrays.js"></script>
+
+    <!-- google font link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta&family=MuseoModerno:ital@1&family=Open+Sans"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="warning">
+      <!-- warning text here! -->
+      <img class="close" src="/Darshan/close.svg" alt="close-svg" />
+      <p class="warning-text"></p>
+    </section>
+
+    <section class="hidden-section">
+      <header>
+        <div>
+          <article id="title">
+            <span class="parent">Team-01 V-43</span><br /><span class="name"
+              >MadLib</span
+            >
+          </article>
+          <article id="reference" class="topnav">
+            <a href="/index.html">Home</a>
+            <a href="/Oksy/about/index.html"
+              >About<span style="visibility: hidden; font-size: 6px">1</span
+              >us</a
+            >
+          </article>
+        </div>
+      </header>
+
+      <div id="title-div">
+        <h1>MadLib : Bird Watching <span>&#129434;</span></h1>
+      </div>
+
+      <section class="detail-section">
+        <!-- instruction -->
+
+        <details>
+          <summary class="instruction">Instructions</summary>
+          <p>
+            To play, Select the title of the story and fill in the blanks with
+            the requested words. When you’re done, click “Create Mad Libs” to
+            view your story. Read the story aloud and laugh!
+          </p>
+        </details>
+
+        <!-- help -->
+
+        <details>
+          <summary class="help">Need Help</summary>
+          <p>
+            A <span> NOUN </span> is the name of a person, place, or thing.
+            Sidewalk, umbrella, bathtub, and roller skates are nouns.
+          </p>
+          <p>
+            An <span> ADJECTIVE </span> describes a person, place, or thing.
+            Lumpy, soft, cute, messy, and short are adjectives.
+          </p>
+          <p>
+            A <span> VERB </span> is an action word. Run, jump, and swim are
+            verbs.
+          </p>
+          <p>
+            An <span> ADVERB </span> describes in what way someone does
+            something. Quickly, slowly, and carefully are adverbs.
+          </p>
+        </details>
+      </section>
+
+      <main class="card">
+        <article class="user-inputs">
+          <form>
+            <div class="inputs">
+              <div class="input-div">
+                <input
+                  type="text"
+                  class="pluralNoun1"
+                  placeholder="PLURAL NOUN"
+                  required
+                />
+              </div>
+
+              <div class="input-div">
+                <input
+                  type="text"
+                  class="adjective1"
+                  placeholder="ADJECTIVE"
+                  required
+                />
+                <button class="randomButton adjective1Button">
+                  <img src="/Darshan/Random.svg" alt="" />
+                </button>
+              </div>
+
+              <div class="input-div">
+                <input
+                  type="text"
+                  class="adjective2"
+                  placeholder="ADJECTIVE"
+                  required
+                />
+                <button class="randomButton adjective2Button">
+                  <img src="/Darshan/Random.svg" alt="" />
+                </button>
+              </div>
+
+              <div class="input-div">
+                <input type="text" class="noun1" placeholder="NOUN" required />
+                <button class="randomButton noun1Button">
+                  <img src="/Darshan/Random.svg" alt="" />
+                </button>
+              </div>
+
+              <div class="input-div">
+                <input
+                  type="text"
+                  class="funny-voice"
+                  placeholder="PLURAL NOUN"
+                  required
+                />
+              </div>
+
+              <div class="input-div">
+                <input type="text" class="verb" placeholder="VERB" required />
+                <button class="randomButton verbButton">
+                  <img src="/Darshan/Random.svg" alt="" />
+                </button>
+              </div>
+
+              <div class="input-div">
+                <input
+                  type="text"
+                  class="number"
+                  placeholder="NUMBER"
+                  required
+                />
+              </div>
+
+              <div class="input-div">
+                <input
+                  type="text"
+                  class="adjective3"
+                  placeholder="ADJECTIVE"
+                  required
+                />
+                <button class="randomButton adjective3Button">
+                  <img src="/Darshan/Random.svg" alt="" />
+                </button>
+              </div>
+
+              <div class="input-div">
+                <input
+                  type="text"
+                  class="adjective4"
+                  placeholder="ADJECTIVE"
+                  required
+                />
+                <button class="randomButton adjective4Button">
+                  <img src="/Darshan/Random.svg" alt="" />
+                </button>
+              </div>
+
+              <div class="input-div">
+                <input
+                  type="text"
+                  class="part-of-a-body"
+                  placeholder="COLOR"
+                  required
+                />
+              </div>
+
+              <div class="input-div">
+                <input
+                  type="text"
+                  class="pluralNoun2"
+                  placeholder="PLURAL NOUN"
+                  required
+                />
+              </div>
+
+              <div class="input-div">
+                <input type="text" class="noun2" placeholder="NOUN" required />
+                <button class="randomButton noun2Button">
+                  <img src="/Darshan/Random.svg" alt="" />
+                </button>
+              </div>
+
+              <div class="input-div">
+                <input
+                  type="text"
+                  class="adjective5"
+                  placeholder="ADJECTIVE"
+                  required
+                />
+                <button class="randomButton adjective5Button">
+                  <img src="/Darshan/Random.svg" alt="" />
+                </button>
+              </div>
+
+              <div class="input-div">
+                <input type="text" class="noun3" placeholder="NOUN" required />
+                <button class="randomButton noun3Button">
+                  <img src="/Darshan/Random.svg" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div class="buttons">
+              <button type="submit" class="create-story">
+                Create Mad Libs <span style="font-size: 20px">&#128513;</span>
+              </button>
+              <button type="submit" class="clear">Clear</button>
+            </div>
+          </form>
+        </article>
+
+        <article class="story">
+          <!-- story text here. -->
+          <p class="story-text"></p>
+        </article>
+      </main>
+
+      <!-- this is the html for the footer section -->
+      <footer>
+        <div class="footer-left">
+          <h3 class="name">MadLib<span class="team"> Team-01 V-43</span></h3>
+
+          <div class="footer-links">
+            <a href="/index.html" class="link-1">Home</a>
+            <p>|</p>
+            <a href="/Oksy/about/index.html">About us</a>
+          </div>
+
+          <p class="footer-company-copyright">MadLib Team-01 V-43 © 2023</p>
+        </div>
+
+        <div class="footer-right">
+          <h4>About the Group</h4>
+          <p class="footer-company-about">
+            Working together as a cohesive unit, this group of 5 front-end
+            developers delivers top-quality websites with sleek designs and
+            intuitive user interfaces. With their extensive knowledge of web
+            development tools and technologies, they are a powerhouse team
+            capable of creating exceptional digital experiences for their
+            clients.
+          </p>
+          <!-- push testing in main -->
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

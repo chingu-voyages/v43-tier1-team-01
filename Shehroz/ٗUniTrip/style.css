@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+}
+
+.unicontainer {
+  background-image: url("dubaiimg2.jpg");
+  height: 800px;
+  /* max-height: 100%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* this is the container for entering the words section */
+.enterwords {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* min-height: 800px; */
+  /* height: 100%; */
+  max-width: 900px;
+  min-width: 300px;
+  width: 80%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.storypara {
+  background-color: rgba(255, 255, 255);
+  height: 80%;
+  width: 70%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px;
+  gap: 20px;
+}
+
+.storypara {
+  font-size: 26px;
+}
+
+/* this css is for the each word you enter */
+.eachword {
+  display: inline;
+  background-color: rgb(165, 96, 77, 0.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+  justify-content: center;
+}
+
+.wordtype {
+  /* background-color: rgba(255, 255, 255); */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 10px;
+}
+
+.uni-words {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+h2 {
+  padding-top: 30px;
+}
+h4 {
+  text-align: center;
+}
+
+.btns {
+  padding-bottom: 60px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 25px;
+  border: none;
+  font-size: inherit;
+  color: white;
+  transition: all 0.2s;
+}
+.btn:hover {
+  font-size: calc(100% + 4px);
+  transition: all 0.2s;
+}
+
+.clear {
+  background-color: #4a4a4a;
+}
+.rand {
+  background-color: rgb(39, 78, 184);
+}
+.story {
+  background-color: green;
+}
+.back {
+  background-color: #27a79f;
+}
+input {
+  border: none;
+  height: 25px;
+  font-family: inherit;
+  font-size: inherit;
+  color: #4a4a4a;
+  padding: 10px 15px;
+}
+
+p > span {
+  color: violet;
+  font-size: calc(100% + 4px);
+}
+
+/* this css is for the messsage about required fields */
+.error-close {
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(2px);
+  z-index: 5;
+}
+
+.titlebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  border: 1px black solid;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+  z-index: 10;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  right: 40%;
+}
+
+/* this is a hidden class which will be used by everyone to display none */
+.hidden {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .wordtype {
+    flex-direction: column;
+    align-items: center;
+  }
+  .storypara {
+    font-size: 20px;
+  }
+  .error {
+    left: 35%;
+    right: 35%;
+  }
+  .unicontainer {
+    height: 1000px;
+  }
+}
+
+@media (max-width: 510px) {
+  body {
+    font-size: 16px;
+  }
+  .storypara {
+    font-size: 14px;
+  }
+  .error {
+    left: 20%;
+    right: 20%;
+  }
+  .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .unicontainer {
+    height: 1200px;
+  }
+}
+
+:root {
+  --body-bg-color: #eee;
+  --header-background-color: #000000;
+  --secondary-font: "Lato", sans-serif;
+  --defination-title-color: #222831;
+  --footer-background-color: #393e46;
+}
+
+header {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  height: 7rem;
+  background-color: rgb(0, 0, 0);
+  background-color: #393e46;
+  /* position: sticky;
+  top: 0;
+  left: 0; */
+  z-index: 100000;
+  /* pointer-events: none;
+  touch-action: none; */
+  /* margin-bottom: 3rem; */
+}
+
+header > div {
+  width: calc(100% - 3rem);
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+#title {
+  width: 100%;
+}
+#title .parent {
+  line-height: 1em;
+  color: #00adb5;
+}
+#title .name {
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Slackey", cursive;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  color: #00adb5;
+}
+
+#reference {
+  display: flex;
+}
+#reference > a {
+  color: #eeeeee;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+#reference > a + a {
+  margin-left: 1rem;
+}
+/* footer css */
+
+footer {
+  width: 100vw;
+  height: 17rem;
+  background-color: var(--footer-background-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 4rem;
+}
+
+.footer-left {
+  width: 20rem;
+  height: 10rem;
+  /* border: 1px solid white; */
+}
+
+.footer-left h3 {
+  color: #00adb5;
+  font-family: "Slackey", cursive;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-left h3 span {
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+
+.footer-links a,
+.footer-links p {
+  color: #eee;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  padding: 2rem 0.2rem 1rem;
+}
+
+.footer-company-copyright {
+  color: #c6c6c6;
+  font-size: 0.9rem;
+}
+
+.footer-right {
+  width: 20rem;
+  height: 13rem;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-right h4 {
+  font-size: 0.9rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.footer-company-about {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #c6c6c6;
+  line-height: 1.3rem;
+}
+
+@media (max-width: 760px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100vw;
+    height: 30rem;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .footer-left {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .footer-right {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-company-about {
+    width: 18rem;
+    text-align: center;
+  }
+}
+
+/* media query for the details tag in smaller screen size.... */
+
+@media (max-width: 670px) {
+  .detail-section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  #reference {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 1rem;
+  }
+
+  #reference > a {
+    color: #eeeeee;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+  }
+
+  #reference > a + a {
+    margin-left: 0rem;
+  }
+}

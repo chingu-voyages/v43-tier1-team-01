@@ -1,0 +1,484 @@
+:root{
+  --title-font : 'MuseoModerno', cursive;
+  --card-header : 'Bebas Neue', cursive;
+  /* primary and secondary */
+  --footer-fonts : 'Open Sans', sans-serif;
+  --secondary-font: "Lato", sans-serif;
+  /* colors */
+  --background-color : #EEEEEE;
+  --header-background-color : #222831;
+  --defination-title-color : #222831;
+  --card-background-color : #9BA4B4;
+  --footer-background-color : #393E46;
+  --body-bg-color: #eee;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Slackey&display=swap");
+
+
+
+/* header and footer */
+
+
+header {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  height: 7rem;
+  background-color: rgb(0, 0, 0);
+  background-color: #393E46;
+  /* position: sticky;
+  top: 0;
+  left: 0; */
+  z-index: 100000;
+  /* pointer-events: none;
+  touch-action: none; */
+  margin-bottom: 3rem;
+}
+
+header > div {
+  width: calc(100% - 3rem);
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+#title {
+  width: 100%;
+}
+#title .parent {
+  line-height: 1em;
+  color: #00adb5;
+}
+#title .name {
+  font-family: "Roboto", sans-serif;
+  font-family: "Slackey", cursive;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  color: #00adb5;
+}
+
+#reference {
+  display: flex;
+}
+#reference > a {
+  color: #EEEEEE;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+#reference > a + a {
+  margin-left: 1rem;
+}
+
+/* footer css */
+
+footer{
+  width: 100vw;
+  height: 17rem;
+  background-color: var(--footer-background-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 4rem;
+}
+
+.footer-left {
+  width: 20rem;
+  height: 10rem;
+  /* border: 1px solid white; */
+}
+
+.footer-left h3{
+  color: #00adb5;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+  font-family: "Slackey", cursive;
+}
+
+.footer-left h3 span{
+  font-size: 1.2rem;
+  font-family: var(--secondary-font);
+}
+
+.footer-links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+
+.footer-links a,
+.footer-links p{
+  color: #eee;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  padding: 2rem 0.2rem 1rem;
+  font-family: var(--secondary-font);
+
+}
+
+.footer-company-copyright{
+  color: #c6c6c6;
+  font-size: 0.9rem;
+  font-family: var(--secondary-font);
+
+}
+
+.footer-right{
+  width: 20rem;
+  height: 13rem;
+  /* border: 1px solid white; */
+  font-family: var(--secondary-font);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-right h4{
+  font-size: 0.9rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.footer-company-about{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #c6c6c6;
+  line-height: 1.3rem;
+}
+
+@media (max-width : 760px){
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100vw;
+    height: 30rem;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .footer-left{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .footer-right{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-company-about{
+    width: 18rem;
+    text-align: center;
+  }
+
+}
+
+/* media query for the details tag in smaller screen size. */
+
+@media (max-width: 670px) {
+  .detail-section {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 500px){
+
+  #reference {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 1rem;
+  }
+
+  #reference > a {
+    color: #EEEEEE;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+  }
+
+  #reference > a + a {
+    margin-left: 0rem;
+  }
+  
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: var(--background-color);
+  position: relative;
+}
+
+#title-div{
+  font-family: var(--title-font);
+  background-color:var(--header-background-color);
+  padding: 1rem 2rem;
+  letter-spacing: 0.3rem;
+  border-radius: 0.5rem;
+  /* color: #0B0B0D; */
+  color: #F1F6F8;
+  font-size: 1.4rem;
+  width: 55%;  
+  margin-left: 1rem;
+}
+
+#title-div h1{
+  text-shadow: 2px 2px #9ca7fb;
+}
+
+#title-div h1 span {
+  text-shadow: none;
+  font-size: 50px;
+}
+
+
+.detail-section {
+  margin: 2rem;
+}
+
+details{
+  border: 2px solid black;
+  border: 2px solid #21273D;
+  padding: 1rem;
+  margin: 1rem 1rem 2rem 1rem; 
+  width: fit-content;
+  border-radius: 0.5rem;
+}
+
+summary{
+  font-family: var(--title-font);
+  list-style: none;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+details p {
+  font-family: var(--simple-font);
+  margin: 0.5rem;
+  color: rgb(0, 0, 0);
+}
+
+p span {
+  color : var(--defination-title-color);
+  letter-spacing: 0.1rem;
+}
+
+main {
+  width: 90vw;
+  margin: 5rem auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff95;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: var(--card-background-color);
+}
+
+
+.user-inputs{
+  height: auto;
+  padding: 2rem; 
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:center;
+}
+
+
+.inputs{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:center;
+}
+
+form div{
+  position: relative;
+  margin: 0.5rem 4rem;
+}
+
+form div .randomButton{
+  position: absolute;
+  right: -2rem;
+  top: 0rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+input{
+  padding: 1rem;
+  outline: none;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.buttons{
+  margin: 2rem auto 0rem auto;
+}
+
+.user-inputs .create-story{
+  background-color: #000000;
+  color: white;
+  letter-spacing: 0.2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-family: var(--secondary-font);
+  margin: 2rem;
+  border: none;
+}
+
+.clear{
+  color: white;
+  letter-spacing: 0.2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-family: var(--secondary-font);
+  margin: 2rem;
+  background-color: rgb(229, 87, 87);
+  border: none;
+}
+
+.story-text{
+  display: none;
+}
+
+.show-storyText{
+  display: block;
+  margin: 2rem auto;
+  width: 90%;
+  font-size: 1.5rem;
+  font-family: var(--simple-font);
+}
+
+span{
+  font-size: 1.6rem;
+}
+
+show-input{
+  color: #4859ae;
+}
+
+.wrong-input{
+  border: 2px solid rgb(233, 95, 95);
+}
+
+
+.warning{
+  display: none;
+}
+
+.show-warning{
+  width: fit-content;
+  height: 20rem;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  z-index: 9999;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.warning-text{
+  display: block;
+  margin: 2rem auto;
+  font-size: 1.7rem;
+  font-family: var(--simple-font);
+  color: rgb(0, 0, 0);
+}
+
+.show-hidden-section{
+  display: none;
+}
+
+.close{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+
+/* media queries */
+
+
+@media (max-width:960px){
+
+  #title-div{
+      letter-spacing: 0.2rem;
+      font-size: 1rem;
+      width: 90%;
+  }
+
+  main {
+      margin: 3rem auto;
+  }
+
+  .story{
+      font-size: 1.2rem;
+      font-family: var(--simple-font);
+  }
+  
+  span{
+      font-size: 1.4rem;
+  }
+
+  #title-div h1 span {
+      text-shadow: none;
+      font-size: 40px;
+  }
+
+  .warning-text{
+      font-size: 1.4rem;
+  }
+
+  .close{
+      width: 2.5rem;
+  }
+
+  .show-storyText{
+      padding: 1rem;
+      font-size: 1.1rem;
+  }
+
+}

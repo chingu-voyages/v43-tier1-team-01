@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+    <title>Mad Libs</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <article id="title">
+          <span class="parent">Team-01 V-43</span><br /><span class="name"
+            >MadLib</span
+          >
+        </article>
+        <article id="reference" class="topnav">
+          <a href="/index.html">Home</a>
+          <a href="/Oksy/about/index.html"
+            >About<span style="visibility: hidden; font-size: 6px">1</span>us</a
+          >
+        </article>
+      </div>
+    </header>
+    <div class="container">
+      <div class="items">
+        <h1>The Fossa</h1>
+        <br />
+        <h2>Instructions</h2>
+        <p class="sentence">
+          MADLIBS is fun to play with friends, but you can also play it by
+          yourself.<br />
+          Fill in all of the input boxes and then click the
+          <strong>'Go Mad'</strong> button.
+        </p>
+      </div>
+
+      <form id="madlibs" onsubmit="buildMadLibs(event)">
+        <div class="form-control">
+          <div class="input-element">
+            <input
+              type="text"
+              id="nouna"
+              name="nouna"
+              placeholder="Noun"
+              required
+            />
+          </div>
+
+          <div class="input-element">
+            <input
+              type="text"
+              id="adjectivea"
+              name="adjectivea"
+              placeholder="Adjective"
+              required
+            />
+          </div>
+
+          <div class="input-element">
+            <input
+              type="text"
+              id="verba"
+              name="verba"
+              placeholder="Verb"
+              required
+            />
+          </div>
+
+          <div class="input-element">
+            <input
+              type="text"
+              id="verbb"
+              name="verbb"
+              placeholder="Verb"
+              required
+            />
+          </div>
+
+          <div class="input-element">
+            <input
+              type="text"
+              id="numbera"
+              name="numbera"
+              placeholder="Number"
+              required
+            />
+          </div>
+
+          <div class="input-element">
+            <input
+              type="text"
+              id="adjectiveb"
+              name="adjectiveb"
+              placeholder="Adjective"
+              required
+            />
+          </div>
+
+          <div class="input-element">
+            <input
+              type="text"
+              id="numberb"
+              name="numberb"
+              placeholder="Number"
+              required
+            />
+          </div>
+
+          <div class="input-element">
+            <input
+              type="text"
+              id="numberc"
+              name="numberc"
+              placeholder="Number"
+              required
+            />
+          </div>
+
+          <div class="input-element">
+            <input
+              type="text"
+              id="verbc"
+              name="verbc"
+              placeholder="Verb"
+              required
+            />
+          </div>
+        </div>
+
+        <button id="submit" type="submit">Go Mad</button>
+      </form>
+
+      <div id="article" class="hidden"></div>
+    </div>
+    <footer>
+      <div class="footer-left">
+        <h3 class="name">MadLib<span class="team"> Team-01 V-43</span></h3>
+
+        <div class="footer-links">
+          <a href="/index.html" class="link-1">Home</a>
+          <p>|</p>
+          <a href="/Oksy/about/index.html">About us</a>
+        </div>
+
+        <p class="footer-company-copyright">MadLib Team-01 V-43 © 2023</p>
+      </div>
+
+      <div class="footer-right">
+        <h4>About the Group</h4>
+        <p class="footer-company-about">
+          Working together as a cohesive unit, this group of 5 front-end
+          developers delivers top-quality websites with sleek designs and
+          intuitive user interfaces. With their extensive knowledge of web
+          development tools and technologies, they are a powerhouse team capable
+          of creating exceptional digital experiences for their clients.
+        </p>
+        <!-- push testing in main -->
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,368 @@
+:root {
+  --body-bg-color: #eee;
+  --header-background-color: #000000;
+  --secondary-font: "Lato", sans-serif;
+  --defination-title-color: #222831;
+  --footer-background-color : #393E46;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: auto;
+  background-color: var(--body-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--secondary-font);
+  overflow-x: hidden
+}
+
+/* ====================================================== this CSS is for the header only ======================================================*/
+/* this font is for the logo */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Slackey&display=swap");
+
+
+header {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  height: 7rem;
+  background-color: rgb(0, 0, 0);
+  background-color: #393E46;
+  /* position: sticky;
+  top: 0;
+  left: 0; */
+  z-index: 100000;
+  /* pointer-events: none;
+  touch-action: none; */
+  margin-bottom: 3rem;
+}
+
+header > div {
+  width: calc(100% - 3rem);
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+#title {
+  width: 100%;
+}
+#title .parent {
+  line-height: 1em;
+  color: #00adb5;
+}
+#title .name {
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Slackey", cursive;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  color: #00adb5;
+}
+
+#reference {
+  display: flex;
+}
+#reference > a {
+  color: #EEEEEE;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+/* #reference > a:hover{
+  background-color: #4a4c50;
+} */
+#reference > a + a {
+  margin-left: 1rem;
+}
+/* ================================================================================================================================================================== */
+
+/* this CSS is for the main/landing page internal area excluding header & footer */
+
+.detail-section {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+details {
+  border: 2px solid black;
+  padding: 1.5rem 1rem;
+  margin: 1rem 1rem 0rem 1rem;
+  width: fit-content;
+  border-radius: 0.5rem;
+}
+
+summary {
+  font-family: var(--secondary-font);
+  list-style: none;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+details:hover {
+  border: 2px solid #bfbfbf;
+}
+
+details p {
+  transition: all 0.2s;
+  letter-spacing: 0.1rem;
+  font-family: var(--secondary-font);
+  margin: 0.5rem;
+  color: rgb(0, 0, 0);
+}
+
+details p span {
+  color: var(--defination-title-color);
+  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
+  color: #9ba4b4;
+}
+
+.coursoer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.images-div {
+  width: 60rem;
+  height: 40rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  transition: transform 300ms ease-in-out;
+  margin-bottom: 5rem;
+}
+
+.images-div a img {
+  width: 60rem;
+  height: 35rem;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  margin-top: 0.5rem;
+}
+
+.images-div a {
+  color: #222831;
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  font-family: var(--title-font);
+  text-shadow: 2px 2px #c6cbef;
+}
+
+.previous {
+  position: absolute;
+  top: 43%;
+  left: 0rem;
+  width: 1.5rem;
+  height: 2.5rem;
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
+  cursor: pointer;
+  z-index: 9999;
+  background-color: #e7eaf6;
+}
+
+.next {
+  position: absolute;
+  top: 43%;
+  right: 0rem;
+  width: 1.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+  cursor: pointer;
+  z-index: 9999;
+  background-color: #e7eaf6;
+}
+
+@media (max-width: 1050px) {
+  .images-div {
+    width: 90vw;
+    height: 70vh;
+  }
+
+  .images-div a img {
+    width: 90vw;
+    height: 50vh;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 570px) {
+  .images-div a {
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+  }
+
+  summary {
+    letter-spacing: 0rem;
+  }
+}
+
+/* ====================================================== this CSS for the footer ======================================================*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+
+/* footer css */
+
+footer{
+  width: 100vw;
+  height: 17rem;
+  background-color: var(--footer-background-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 4rem;
+}
+
+.footer-left {
+  width: 20rem;
+  height: 10rem;
+  /* border: 1px solid white; */
+}
+
+.footer-left h3{
+  color: #00adb5;
+  font-family: "Slackey", cursive;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-left h3 span{
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer-links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+
+.footer-links a,
+.footer-links p{
+  color: #eee;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  padding: 2rem 0.2rem 1rem;
+}
+
+.footer-company-copyright{
+  color: #c6c6c6;
+  font-size: 0.9rem;
+}
+
+.footer-right{
+  width: 20rem;
+  height: 13rem;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-right h4{
+  font-size: 0.9rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.footer-company-about{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #c6c6c6;
+  line-height: 1.3rem;
+}
+
+@media (max-width : 760px){
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100vw;
+    height: 30rem;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .footer-left{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .footer-right{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-company-about{
+    width: 18rem;
+    text-align: center;
+  }
+
+}
+
+/* media query for the details tag in smaller screen size. */
+
+@media (max-width: 670px) {
+  .detail-section {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 500px){
+
+  #reference {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 1rem;
+  }
+
+  #reference > a {
+    color: #EEEEEE;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+  }
+
+  #reference > a + a {
+    margin-left: 0rem;
+  }
+  
+}

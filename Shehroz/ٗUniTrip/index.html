@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header with logo and navbar -->
+
+    <header>
+      <div>
+        <article id="title">
+          <span class="parent">Team-01 V-43</span><br /><span class="name"
+            >MadLib</span
+          >
+        </article>
+        <article id="reference" class="topnav">
+          <a href="/index.html">Home</a>
+          <a href="/Oksy/about/index.html"
+            >About<span style="visibility: hidden; font-size: 6px">1</span>us</a
+          >
+        </article>
+      </div>
+    </header>
+
+    <section class="unicontainer">
+      <div class="enterwords">
+        <h2>University Trip</h2>
+
+        <section class="uni-words">
+          <div class="wordtype">
+            <!-- <h4>Nouns</h4> -->
+            <div class="eachword">
+              <label for="noun1">Enter a Noun</label>
+              <input type="text" id="noun1" class="unistory" />
+            </div>
+            <div class="eachword">
+              <label for="noun2">Enter another noun</label>
+              <input type="text" id="noun2" class="unistory" />
+            </div>
+          </div>
+          <div class="wordtype">
+            <!-- <h4>Ajectives</h4> -->
+            <div class="eachword">
+              <label for="adj1">Enter an Adjective</label>
+              <input type="text" id="adj1" class="unistory" />
+            </div>
+            <div class="eachword">
+              <label for="adj2">Enter another Adjectives</label>
+              <input type="text" id="adj2" class="unistory" />
+            </div>
+          </div>
+          <div class="wordtype">
+            <!-- <h4>Activity</h4> -->
+            <div class="eachword">
+              <label for="act">Enter an activity</label>
+              <input type="text" id="act" class="unistory" />
+            </div>
+          </div>
+          <div class="wordtype">
+            <!-- <h4>Verbs</h4> -->
+            <div class="eachword">
+              <label for="verb">Enter a verb</label>
+              <input type="text" id="verb" class="unistory" />
+            </div>
+          </div>
+          <div class="wordtype">
+            <!-- <h4>Special day</h4> -->
+            <div class="eachword">
+              <label for="occation">Enter a special day</label>
+              <input type="text" id="occation" class="unistory" />
+            </div>
+          </div>
+        </section>
+        <section class="btns">
+          <button class="rand btn">Random</button>
+          <button class="clear btn">Clear</button>
+          <button class="story btn">Diplay Story</button>
+        </section>
+      </div>
+      <div class="storypara hidden">
+        <h2>University Trip</h2>
+        <p>
+          I couldn't believe my luck when I found out that my university was
+          organizing a trip to Dubai. The prospect of exploring a new city with
+          my classmates was <span id="userAdj1">useradj11</span>, and I couldn't
+          wait to see what adventures awaited us. As soon as we landed in Dubai,
+          we hit the ground running. We visited the famous Burj Khalifa,
+          <span id="userAct"></span> in the desert, and even took a dhow cruise
+          along <span id="specialDay"></span
+          ><!--here the secial day represenst the location-->. I was in awe of
+          the glittering <span id="userNoun1"></span> and bustling
+          <span id="userNoun2"></span>, and the cultural experience was truly
+          unforgettable. During the trip, we also had the opportunity to meet
+          with local business owners and entrepreneurs, which gave us a
+          <span id="userAdj2"></span>
+          insight into the economy and job market in Dubai. I was
+          <span id="userVerb"></span> by their stories of success and
+          perseverance, and it gave me a new perspective on what I wanted to do
+          with my degree after graduation. As the trip came to an end, I felt
+          grateful for the experience and the memories that I had made. It was a
+          trip that I would always cherish, and I was excited to see where my
+          future adventures would take me.
+        </p>
+        <button class="back btn">< Go Back</button>
+      </div>
+    </section>
+    <!-- empty input fields error message -->
+    <div class="error hidden">
+      <div class="titlebar">
+        <h3>Error ‼️</h3>
+        <button class="error-close">&times;</button>
+      </div>
+      <p class="errorMsg">Please enter all the fields.</p>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <!-- this is the html for the footer section -->
+    <footer>
+      <div class="footer-left">
+        <h3 class="name">MadLib<span class="team"> Team-01 V-43</span></h3>
+
+        <div class="footer-links">
+          <a href="/index.html" class="link-1">Home</a>
+          <p>|</p>
+          <a href="/Oksy/about/index.html">About us</a>
+        </div>
+
+        <p class="footer-company-copyright">MadLib Team-01 V-43 © 2023</p>
+      </div>
+
+      <div class="footer-right">
+        <h4>About the Group</h4>
+        <p class="footer-company-about">
+          Working together as a cohesive unit, this group of 5 front-end
+          developers delivers top-quality websites with sleek designs and
+          intuitive user interfaces. With their extensive knowledge of web
+          development tools and technologies, they are a powerhouse team capable
+          of creating exceptional digital experiences for their clients.
+        </p>
+        <!-- push testing in main -->
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

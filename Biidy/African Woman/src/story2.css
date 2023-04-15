@@ -1,0 +1,305 @@
+body{
+    background-image: url(../assets/img2.jpg);
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: contain;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+    #storie2{
+          border:2px solid orangered;
+          text-align: center;
+          width: 400px;
+          height: 250px;
+          border-radius: 10px;
+          font-size: 0.5rem;
+          font-family:Cambria, Cochin, 'Courier New', Courier, monospace;
+          font: weight 1000px;
+          margin-top: 12%;
+    
+    }
+    #tab{
+        width: 400px;
+        height: 300px;
+        margin: 2rem auto;
+    
+    }
+    #btn{
+        width: 300px;
+        height: 200px;
+        margin: 2rem auto;
+    }
+    
+    #storie2,#back{
+        display: none;
+    
+    }
+    #storie2{
+       background-image: url(../assets/img2.png);
+        color:aliceblue;
+    }
+    #gomad,#random,#clear,#back{
+        margin: auto;
+        width: 200px;
+        height: 30px;
+        border: 2px solid red;
+        border-radius: 15px;
+        font-size: medium;
+        font-weight: bolder;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    #gomad{
+        background-color: green;
+        color: rgb(54, 9, 9);
+    }
+    #random{
+        background-color:aliceblue;
+        color: gray;
+    }
+    #clear{
+        background-color:rgb(54, 9, 9);
+        color: red;
+    }
+    #back{
+        background-color:rgb(54, 9, 9);
+        color: red;
+    }
+    #guide{
+        margin: auto;
+        width: 350px;
+        font-size: 1rem;
+        font-family:Arial, Helvetica, sans-serif;
+        color:rgb(31, 115, 211);
+        font-weight: bold;
+        margin-top: 2%;
+        background-color:wheat;
+    }
+    #rand{
+        color:green;
+    }
+    /*for the button stories
+    
+    /* for the inputs*/
+    input{
+        border: 3px solid green;
+        border-radius: 15px;
+        width: 150px;
+        height: 30px;
+    } 
+    input:hover{
+        border-color: orangered;
+    }
+    input:active{
+        box-shadow: 5px 5px rgb(54, 9, 9);
+    }  
+    .label{
+        color:rgb(54, 9, 9) ;
+        font-size: 1rem;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        background-color: wheat;
+    } 
+    #title2{
+        color: tomato;
+    }
+    @media all and (max-width:400px){
+        #storie2{
+         width: 200px;
+         overflow:auto;
+         height: 304px;
+        }
+        
+     input{
+         width: 80px;
+ 
+    }
+    #back{
+     margin-top: 60%;
+    }
+    #back,#gomad,#random,#clear{
+     width: 100px;
+    margin-left :33%;
+    }
+    #guide{
+     width: 250px;
+    }
+ }
+
+
+ /* header and footer - darshan */
+
+ 
+header {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  height: 7rem;
+  background-color: rgb(0, 0, 0);
+  background-color: #393E46;
+  /* position: sticky;
+  top: 0;
+  left: 0; */
+  z-index: 100000;
+  /* pointer-events: none;
+  touch-action: none; */
+  margin-bottom: 3rem;
+}
+
+header > div {
+  width: calc(100% - 3rem);
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+#title {
+  width: 100%;
+}
+#title .parent {
+  line-height: 1em;
+  color: #00adb5;
+}
+#title .name {
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Slackey", cursive;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  color: #00adb5;
+}
+
+#reference {
+  display: flex;
+}
+#reference > a {
+  color: #EEEEEE;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+#reference > a + a {
+  margin-left: 1rem;
+}
+/* footer css */
+
+footer{
+  width: 100vw;
+  height: 20rem;
+  display: flex;
+  background-color: #393E46;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid black;
+}
+
+.footer-left {
+  width: 20rem;
+  height: 15rem;
+  /* border: 1px solid white; */
+  margin: 0rem 3rem;
+}
+
+.footer-left h3{
+  color: #00adb5;
+  font-family: "Slackey", cursive;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-left h3 span{
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer-links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+
+.footer-links a,
+.footer-links p{
+  color: #eee;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  padding: 2rem 0.2rem 1rem;
+}
+
+.footer-company-copyright{
+  color: #c6c6c6;
+  font-size: 0.9rem;
+}
+
+.footer-right{
+  width: 20rem;
+  height: 13rem;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0rem 3rem;
+}
+
+.footer-right h4{
+  font-size: 0.9rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.footer-company-about{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #c6c6c6;
+  line-height: 1.3rem;
+}
+
+@media (max-width : 760px){
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100vw;
+    height: 30rem;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .footer-left{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .footer-right{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-company-about{
+    width: 18rem;
+    text-align: center;
+  }
+
+}
+ 
+ 

@@ -1,14 +1,14 @@
-# voyage-tasks
+# MadLib-Team01-V43
+MADLIB game by Chingu Vouyge 43 Team-01.
 
-Your project's `readme` is as important to success as your code. For 
-this reason you should put as much care into its creation and maintenance
-as you would any other component of the application.
+more about [Chingu](https://www.chingu.io/)
 
-If you are unsure of what should go into the `readme` let this article,
-written by an experienced Chingu, be your starting point - 
-[Keys to a well written README](https://tinyurl.com/yk3wubft).
+## Info about the game : 
 
-And before we go there's "one more thing"! Once you decide what to include
-in your `readme` feel free to replace the text we've provided here.
+Madlib is a game containing words like noun , adverb , verb , adjective , number , plural nouns and by choosing them for the story you select by
+clicking on one of the images inside the landing page you will get a story which you can read loud and laught with your friends or family.
 
-> Own it & Make it your Own!
+
+### Info about US : 
+We are 5 aspiring front-end developers from India, Madagascar, Pakistan, and Ukraine.
+Chingu happily made us a team. We were working for 6 weeks and maked up this cute MadLib game for you. Have fun !!!
